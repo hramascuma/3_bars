@@ -13,7 +13,6 @@ def load_data(filepath):
 		   				   ['SeatsCount'])
 	return data, coordinates, seats_count
 
-
 #создание списка с дистанцией между координатами каждого бара и пользовательскими (longitude, latitude) 
 def bars_with_distance(longitude, latitude, coordinates):
 	list_with_distance = []
@@ -23,7 +22,6 @@ def bars_with_distance(longitude, latitude, coordinates):
 				      (float(coordinates_for_i[1]) - latitude) ** 2) ** 0.5
 		list_with_distance.append(dist_for_i)
 	return list_with_distance
-
 
 #создает список идексов с искомым значением
 def get_index(sought_value, list_of_values):
@@ -43,7 +41,6 @@ def get_closest(data, longitude, latitude):
 		)
 	)
 
-
 def get_biggest_bar(data)(data):
 	list_with_index_max = get_index(max(seats_count), seats_count)
 	#итерирует список индексов с максимальным значением и выводит по одному
@@ -61,7 +58,6 @@ def get_biggest_bar(data)(data):
 				)
 			)
 		print('Данные закончились')
-
 
 def get_smallest_bar(data):
 	list_with_index_min = get_index(min(seats_count), seats_count)
