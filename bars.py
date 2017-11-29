@@ -40,8 +40,9 @@ def get_closest(data, longitude, latitude):
 			ensure_ascii=False
 		)
 	)
+	print('Данные закончились')
 
-def get_biggest_bar(data)(data):
+def get_biggest_bar(data):
 	list_with_index_max = get_index(max(seats_count), seats_count)
 	#итерирует список индексов с максимальным значением и выводит по одному
 	#на экран информацию по бару по соответствующему индексу
