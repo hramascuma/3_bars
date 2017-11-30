@@ -116,6 +116,7 @@ def get_my_coordinates():
         sys.exit(1)
     return longitude, latitude
 
+
 if __name__ ==  '__main__':
     filepath = input('Введите полный путь до базы данных: ')
     json_content, coordinates, seats_count = load_data(filepath)
